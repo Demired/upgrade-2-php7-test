@@ -57,7 +57,7 @@ zmq
 
 ## igbinary拓展pecl上的不能用，需要从github拉取php7版本，但此本编译仍有警告，原因正在排查
 
-php7 已经移除了ereg拓展，ereg能完成的工作preg_match也能完成
+> php7 已经移除了ereg拓展，ereg能完成的工作preg_match也能完成
 
 ```shell
 yum -y update \
@@ -161,7 +161,7 @@ igbinary7 https://github.com/Demired/igbinary7/archive/v1.0.tar.gz
 
 ## libmemcached configure
 
-```$xslt
+```
 ./configure && make -j8 && make install
 ```
 
@@ -318,7 +318,6 @@ cp -R ./sapi/fpm/php-fpm /etc/init.d/php-fpm
 ```
 
 ```
-其中
 safe_mode已在php5.4被移除
 mysql已在php7.0被移除
 mssql不需要
