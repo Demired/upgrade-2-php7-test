@@ -253,7 +253,7 @@ cp -R ./sapi/fpm/php-fpm /etc/init.d/php-fpm
 "sybct.max_links": "-1",
 "sybct.min_server_severity": "10",
 "sybct.min_client_severity": "10",
-"browscap": "/home/codebase/server-config/php_browscap.ini",
+"browscap": "/xxxxx/php_browscap.ini",
 "ifx.default_host": "",
 "ifx.default_user": "",
 "ifx.default_password": "",
@@ -294,7 +294,7 @@ cp -R ./sapi/fpm/php-fpm /etc/init.d/php-fpm
 "apc.stat_ctime": "1",
 "apc.serializer": "igbinary",
 "apc.shm_strings_buffer": "0",
-"zend_extension": "/usr/local/php/lib/php/extensions/no-debug-non-zts-20131226/opcache.so",
+"zend_extension": "/opcache.so",
 "opcache.memory_consumption": "64",
 "opcache.interned_strings_buffer": "8",
 "opcache.max_accelerated_files": "1024",
@@ -306,7 +306,7 @@ cp -R ./sapi/fpm/php-fpm /etc/init.d/php-fpm
 "yac.keys_memory_size": "8M",
 "yac.values_memory_size": "1024M",
 "yac.compress_threshold": "1024",
-"extension": "/usr/local/php/lib/php/extensions/no-debug-non-zts-20131226/xlog.so",
+"extension": "/xlog.so",
 "xlog.enabled": "1",
 "http.etag.mode": "CRC32B",
 "memcached.compression_threshold": "2048",
@@ -317,6 +317,7 @@ cp -R ./sapi/fpm/php-fpm /etc/init.d/php-fpm
 "xhprof.output_dir": "/home/logs/xhprof"
 ```
 
+```
 其中
 safe_mode已在php5.4被移除
 mysql已在php7.0被移除
@@ -338,11 +339,13 @@ magic_quotes_runtime 5.4中已移除
 magic_quotes_sybase 5.4中已移除
 define_syslog_variables 5.4中已移除
 ```
+
+```
 "asp_tags": "Off",
 "exit_on_timeout": "On",
 "always_populate_raw_post_data": "-1",
 "extension_dir": "/usr/local/php/lib/",
-"browscap": "/home/codebase/server-config/php_browscap.ini",
+"browscap": "/xxxx/php_browscap.ini",
 "session.bug_compat_42": "0",
 "session.bug_compat_warn": "1",
 "session.entropy_file": "",
